@@ -1,0 +1,79 @@
+<h1>Héroes
+    <small>Marvel & DC</small>
+</h1>
+<div class="card-columns">
+    <!-- <div class="card text-center">
+        <div class="card-header text-white bg-warning">Aquaman</div>
+        <img class="card-img-top img-fluid" src="assets/img/aquaman.png" alt="Card image cap">
+        <div class="card-block">
+            <h5 class="card-title">Warning card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <button type="button" class="btn btn-outline-primary btn-block">Ver mas...</button>
+        </div>
+    </div>
+
+    <div class="card text-center">
+        <div class="card-header text-white bg-dark">Batman</div>
+        <img class="card-img-top img-fluid" src="assets/img/batman.png" alt="Card image cap">
+        <div class="card-block">
+            <h5 class="card-title">Warning card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <button type="button" class="btn btn-outline-primary btn-block">Ver mas...</button>
+        </div>
+    </div>
+
+    <div class="card text-center">
+        <div class="card-header text-white bg-danger">Daredevil</div>
+        <img class="card-img-top img-fluid" src="assets/img/daredevil.png" alt="Card image cap">
+        <div class="card-block">
+            <h5 class="card-title">Warning card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <button type="button" class="btn btn-outline-primary btn-block">Ver mas...</button>
+        </div>
+    </div>
+
+    <div class="card text-center">
+        <div class="card-header  text-white bg-success">Hulk</div>
+        <img class="card-img-top img-fluid" src="assets/img/hulk.png" alt="Card image cap">
+        <div class="card-block">
+            <h5 class="card-title">Warning card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <button type="button" class="btn btn-outline-primary btn-block">Ver mas...</button>
+        </div>
+    </div>
+
+    <div class="card text-center">
+        <div class="card-header text-white bg-success">Linterna Verde</div>
+        <img class="card-img-top img-fluid" src="assets/img/linterna-verde.png" alt="Card image cap">
+        <div class="card-block">
+            <h5 class="card-title">Warning card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <button type="button" class="btn btn-outline-primary btn-block">Ver mas...</button>
+        </div>
+    </div>
+
+    <div class="card text-center">
+        <div class="card-header text-white bg-primary">Spiderman</div>
+        <img class="card-img-top img-fluid" src="assets/img/spiderman.png" alt="Card image cap">
+        <div class="card-block">
+            <h5 class="card-title">Warning card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <button type="button" class="btn btn-outline-primary btn-block">Ver mas...</button>
+        </div>
+    </div>
+
+    <div class="card text-center">
+        <div class="card-header text-white bg-warning">Wolverine</div>
+        <img class="card-img-top img-fluid" src="assets/img/wolverine.png" alt="Card image cap">
+        <div class="card-block">
+            <h5 class="card-title">Warning card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <button type="button" class="btn btn-outline-primary btn-block">Ver mas...</button>
+        </div>
+    </div> -->
+    <!-- *ngFor="let heroe of heroes; let i = index;" -->
+    <!-- Nombre de la propiedad [heroe]  -->
+    <!-- $event es una palabra reserveda que viene del evento de heroe tarjeta components desde el componente padre lo escuche -->
+    <app-heroe-tarjeta (heroeSeleccionado)="VerHeroe($event)" [heroe]="heroe" [index]="i" *ngFor="let heroe of heroes; let i = index;">
+    </app-heroe-tarjeta>
+</div>

@@ -1,0 +1,23 @@
+<body>
+    <div class="container">
+        <h1>{{heroe.nombre | uppercase}}</h1>
+        <h2 class="badge badge-info">{{heroe.aparicion | date:'y'}}</h2>
+
+        <div class="card mb-3" style="max-width: 840px;">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <img src={{heroe.img}} class="card-img">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <img src={{hcasa}} class="card-img" style="max-width: 40px;" alt={{heroe.casa}}>
+                        <!-- <h5 class="card-title">{{heroe.casa}}</h5> -->
+                        <img>
+                        <p class="card-text">{{heroe.bio}}</p>
+                        <a [routerLink]="['/heroes']" class="btn btn-outline-primary btn-block">Regresar...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

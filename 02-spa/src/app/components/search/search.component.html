@@ -1,0 +1,12 @@
+<body>
+    <br>
+    <div class="row animated fadeIn fast" *ngIf="ArrHeroe.length == 0">
+        <div class="col-md-12">
+            <div class="alert alert-info" role="alert">
+                No existen resultados con el término: {{ Nombre }}
+            </div>
+        </div>
+    </div>
+    <app-heroe-tarjeta [heroe]="heroe" [index]="heroe.idx" *ngFor="let heroe of ArrHeroe; let i = index;">
+    </app-heroe-tarjeta>
+</body>

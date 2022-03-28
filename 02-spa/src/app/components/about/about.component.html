@@ -1,0 +1,29 @@
+<div class="form-group">
+    <label for="formGroupExampleInput">Busqueda</label>
+    <input [(ngModel)]="filterPost" name="filterPost" type="text " class="form-control " placeholder="Busqueda ... ">
+</div>
+<button type="submit " class="btn btn-primary ">Submit</button>
+<br>
+<table class="table ">
+    <thead>
+        <tr>
+            <th scope="col ">#</th>
+            <th scope="col ">Nombre</th>
+            <th scope="col ">Biografia</th>
+            <th scope="col ">Imagen </th>
+            <th scope="col ">Aparición </th>
+            <th scope="col ">Casa</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let heroe of ArrHeroes | filter:filterPost ">
+            <th scope="row ">1</th>
+            <td>{{ heroe.nombre }}</td>
+            <td>{{ heroe.bio }}</td>
+            <td>{{ heroe.img }}</td>
+            <td>{{ heroe.aparicion}}</td>
+            <td>{{ heroe.casa }}</td>
+
+        </tr>
+    </tbody>
+</table><br><br>
