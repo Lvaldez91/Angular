@@ -1,0 +1,11 @@
+<p>Hola nuevo componente</p>
+<div class="row">
+  <div class="col">
+    <list-bdz [characterList]="dbzService.characters" (onDeleteEmiter)="dbzService.onDelete($event)"></list-bdz>
+  </div>
+  <br>
+  <div class="col">
+    <dbz-add-character (onNewCharacter)="dbzService.onNewCharacter($event)"></dbz-add-character>
+  </div>
+</div>
+
