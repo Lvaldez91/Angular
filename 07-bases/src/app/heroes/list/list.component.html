@@ -1,0 +1,19 @@
+<h3>Listado de Angular</h3>
+
+<button class="btn btn-outline-danger mx-2" (click)="removeItemHero()"
+*ngIf="heroName.length > 0">Delete item</button>
+
+<div *ngIf="deleteHero; else nothinWasDeleted" >
+  <h3 class="">se ha eliminado: {{deleteHero}}</h3>
+</div>
+
+
+<ul class="mt-2 list-group">
+  <li class="list-group-item" *ngFor="let item of heroName">{{item}}</li>
+</ul>
+
+<ng-template #nothinWasDeleted>
+  <h3>No ha borrado nada</h3>
+</ng-template>
+
+

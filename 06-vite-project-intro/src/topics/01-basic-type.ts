@@ -6,4 +6,4 @@ const isAlive: boolean = true;
 
 console.log(name);
 
-export {console.log(name);}
+export {}
