@@ -9,7 +9,7 @@ import { Character } from '../../interfaces/character.interface';
 
 export class ListComponent {
   @Output()
-  public onDeleteEmiter: EventEmitter<number> = new EventEmitter();
+  public onDeleteEmiter: EventEmitter<string> = new EventEmitter();
 
   public dbz: string[] = ['Goku', 'Vegeta','Vulma', 'Gohan']
 
@@ -20,10 +20,8 @@ export class ListComponent {
     }
   ];
 
-  onDelete(index:number):void{
-    this.onDeleteEmiter.emit(index);
-  }
-  onDeleteCharacter(index:number):void{
-    console.log(index);
+  onDelete(id?:string):void{
+    if(!id) return;
+    this.onDeleteEmiter.emit(id);
   }
 }
