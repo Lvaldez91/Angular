@@ -1,9 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ROUTES } from '../../../04-spotiApp/src/app/app.routes';
+import { LoginComponent } from './pages/login/login.component';
 
 const routes: Routes = [
-  {path:'**', redirectTo:'Login'}
+  {
+    path: 'Login',
+    component: LoginComponent
+  },
+  {
+    path:'**',
+    redirectTo:'Login'
+  }
 ];
 
 @NgModule({
