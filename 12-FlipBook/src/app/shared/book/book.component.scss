@@ -1,0 +1,62 @@
+.size-book {
+  height: 90%;
+  width: 90%;
+}
+
+.page{
+  width: 15px;
+  background: #CACFD2;
+}
+
+.layout-portada {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto !important;
+  border-top: solid 1px #e2ddd5
+}
+
+.size-home {
+  width: 50%;
+}
+
+.size-page {
+  width: 100%;
+}
+
+.left {
+  left: 0;
+  transform-origin: right;
+  transition: transform 0s;
+}
+
+.right {
+  right: 0;
+  transform-origin: left;
+  transition: transform 0s;
+}
+
+
+.rightbtn:hover {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+    width: 5px;
+  height: 100%;
+  border-right: 0px solid #CACFD2;
+  border-top: 500px solid #CACFD2;
+  border-left: 100px solid #F0F3F4;
+  border-bottom: 0px solid #F0F3F4;
+  border-radius: 4px;
+  box-shadow: 10px #CACFD2;
+}
+
+.leftbtn:hover {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+    width: 5px;
+  height: 100%;
+  border-right: 100px solid #F0F3F4;
+  border-top: 500px solid #CACFD2;
+  border-left: 0px solid #CACFD2;
+  border-bottom: 0px solid #F0F3F4;
+  border-radius: 4px;
+}

@@ -1,0 +1,49 @@
+/* You can add global styles to this file, and also import other style files */
+$basecolor-body:#F0F3F4;
+$basecolor-header:#2c013d;
+$basecolor-navbar:#FFFFFF;
+$basecolor-footer: #D0D3D4;
+$basecolor-borde-main:#512E5F;
+$basecolor-borde-gray:#E5E7E9;
+$color-text-white: #FEFEFE;
+$color-text-header: #212F3C;
+$color-text-main: #34495E;
+$color-text-blue: #154360;
+$color-text-clar: #AEB6BF;
+/*Font family*/
+$family-text: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+
+.structure {
+  display: grid;
+  grid-template-columns: 200px 1fr 200px;
+  grid-template-rows: auto 1fr auto;
+  grid-gap: 0px;
+  grid-template-areas: "header header header" "content content content";
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+app-header {
+  background: $basecolor-header;
+  border-bottom: $basecolor-borde-main solid 5px;
+  color: $color-text-white;;
+  font-family: $family-text;
+  font-size: 15px;
+  grid-area: header;
+  text-align: center;
+}
+
+app-nav {
+  background-color:$basecolor-navbar;
+  grid-area: nav;
+  margin-left: 0.0rem;
+}
+
+app-main {
+  grid-area: content;
+  background-color: $basecolor-body;
+  padding: 25px;
+  overflow-y: auto;
+}

@@ -1,0 +1,41 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+  background: navy;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden;
+  color: #283747;
+}
+
+.box-left {
+  border-right: 0;
+  box-shadow: inset -7px 0 30px -7px rgba(0, 0, 0, 0.4);
+}
+
+.box-right {
+  border-left: 0;
+  box-shadow: inset 7px 0 30px -7px rgba(0, 0, 0, 0.4);
+}
+
+.con-justify {
+  text-align: justify;
+}
+
+.lower-case {
+  list-style-type: lower-alpha;
+}
+
+.roman {
+  list-style-type: upper-roman;
+}
+
+.v-lineH {
+  border-bottom: thick solid #626567;
+  width: 100%;
+  margin-left: 0 auto;
+}
+
+.sizeimg {
+  width: 5rem;
+}
