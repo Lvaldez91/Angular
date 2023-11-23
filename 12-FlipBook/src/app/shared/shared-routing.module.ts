@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MagazineComponent } from './layout/magazine/magazine.component';
-import { BookComponent } from './book/book.component';
+import { BookComponent } from '../pages/book/book.component';
 
 const routes: Routes = [
   {

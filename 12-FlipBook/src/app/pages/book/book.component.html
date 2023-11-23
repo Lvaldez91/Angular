@@ -2,16 +2,17 @@
   <div id="book" class="carousel border border-light-subtle shadow-lg h-100" [ngClass]="{'w-50': tipo==0, 'size-page': tipo!=0}">
     <div class="carousel-inner h-100 overflow-y-auto ">
       <div class="carousel-item active h-100 left">
-        <app-home></app-home>
+        <!-- <app-home></app-home> -->
+
       </div>
       <div class="carousel-item h-100 left"  >
         <app-detalle ></app-detalle>
       </div>
       <div class="carousel-item h-100 right">
-        <app-onepage></app-onepage>
+
       </div>
       <div class="carousel-item h-100 left">
-        <app-onepage></app-onepage>
+
       </div>
     </div>
     <button class="carousel-control-prev page leftbtn" *ngIf="tipo!=0" type="button" data-bs-target="#book" data-bs-slide="prev" (click)="getPrev()" >

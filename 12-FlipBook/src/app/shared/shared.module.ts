@@ -7,11 +7,12 @@ import { NavComponent } from './layout/nav/nav.component';
 import { MainComponent } from './layout/main/main.component';
 import { MagazineComponent } from './layout/magazine/magazine.component';
 import { HomeComponent } from './pages/home/home.component';
-import { BookComponent } from './book/book.component';
+import { BookComponent } from '../pages/book/book.component';
 import { OnepageComponent } from './pages/onepage/onepage.component';
 import { DetalleComponent } from './pages/detalle/detalle.component';
 import { FormsModule } from '@angular/forms';
 import { ModalComponent } from './pages/modal/modal.component';
+import { AppComponent } from '../app.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ModalComponent } from './pages/modal/modal.component';
   imports: [
     FormsModule,
     CommonModule,
-    SharedRoutingModule
+    SharedRoutingModule,
+    AppComponent
   ]
 })
 export class SharedModule { }

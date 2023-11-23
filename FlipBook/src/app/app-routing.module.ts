@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: 'home',
-    loadChildren:() => import('./shared/shared.module').then((x)=> x.SharedModule)
+    loadChildren: () => import('./modules/dashboard/dashboard.module').then((x)=> x.DashboardModule)
   },
   {
     path:'**',

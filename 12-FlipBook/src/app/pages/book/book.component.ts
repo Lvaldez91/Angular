@@ -1,5 +1,5 @@
 import { ChangeDetectorRef, Component, Directive, ElementRef, Input, ViewChild } from '@angular/core';
-import { typeLayout } from '../constants/layout-variable';
+import { typeLayout } from '../../shared/constants/layout-variable';
 import { timeout } from 'rxjs';
 
 @Component({
