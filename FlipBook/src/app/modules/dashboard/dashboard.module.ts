@@ -9,6 +9,8 @@ import { Informe3Component } from './pages/informe-3/informe-3.component';
 import { Informe4Component } from './pages/informe-4/informe-4.component';
 import { Informe0Component } from './pages/informe-0/informe-0.component';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { PortadaComponent } from './pages/expediente/portada/portada.component';
+import { InformeComponent } from './pages/expediente/informe/informe.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { SharedModule } from 'src/app/shared/shared.module';
     Informe2Component,
     Informe3Component,
     Informe4Component,
-    Informe0Component
+    Informe0Component,
+    PortadaComponent,
+    InformeComponent
   ],
   imports: [
     CommonModule,

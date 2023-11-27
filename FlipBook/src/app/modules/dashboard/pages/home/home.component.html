@@ -1,8 +1,18 @@
-<div class="layout-portada size-book mt-5 color-primary">
-  <div id="book" class="carousel border border-secondary-subtle shadow-lg h-100" [ngClass]="{'size-book_': tipo==0, 'size-page': tipo!=0}">
-    <div class="carousel-inner h-100 overflow-y-auto ">
+<!-- Estrutura general de la vista main  -->
+<div class="layout-portada size-book mt-5">
+  <div id="book" class="carousel shadow-lg bg-body-tertiary border border-secondary-subtle h-100" [ngClass]="{'size-book_': tipo==0, 'size-page': tipo!=0}">
+    <div class="carousel-inner h-100 overflow-y-auto color-primary">
       <div class="carousel-item active h-100 left">
         <app-informe-0></app-informe-0>
+      </div>
+      <div class="carousel-item h-100 left"  >
+        <app-informe-1></app-informe-1>
+      </div>
+      <div class="carousel-item h-100 right">
+        <app-informe-2></app-informe-2>
+      </div>
+      <div class="carousel-item h-100 left">
+        <app-informe-3></app-informe-3>
       </div>
       <div class="carousel-item h-100 left"  >
         <app-informe-1></app-informe-1>

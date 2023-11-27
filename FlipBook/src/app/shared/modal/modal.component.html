@@ -1,1 +1,31 @@
-<p>modal works!</p>
+<div class="modal fade" id="modaldialog" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 fw-bold" id="modaldialogLabel">{{TituloModal}}</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+          (click)="closeModal()"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col">
+            <strong>{{Pregunta}}</strong>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="card-body">
+              <p class="card-title mt-1 mb-1 fs-5 fw-bold">TERESA SOLIS TORRES</p>
+              <p class="card-text m-0 ms-3"><strong>Edad: </strong>30-39 años</p>
+              <p class="card-text m-0 ms-3"><strong>Sexo: </strong>Mujer.</p>
+              <p class="card-text m-0 ms-3"><strong>Puesto o cargo: </strong>ENCARGADO</p>
+              <p class="card-title mt-3 mb-1 fs-5 fw-bold">Datos de contacto:</p>
+              <p class="card-text m-0 ms-3"><strong>Teléfono: </strong>3344225511</p>
+              <p class="card-text m-0 ms-3"><strong>Correo electrónico: </strong>kgarcia@opti.com.mx</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

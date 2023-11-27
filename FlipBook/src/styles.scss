@@ -1,7 +1,8 @@
 $family-text: Georgia, 'Times New Roman', Times, serif;
+$bk-purple:#653279;
 
 body {
-  //background: #FFFFFF;
+  background: #FFFFFF;
   margin: 0 !important;
   padding: 0 !important;
   overflow: hidden;
@@ -11,6 +12,26 @@ body {
 app-home{
   margin-top: 20px;
   overflow-y: auto;
+}
+
+.margin-0{
+  margin: 0 auto;
+}
+
+.margin-l{
+  margin-left: 10rem;
+}
+
+.margin-r{
+  margin-right: 10rem;
+}
+
+.margin-t{
+  margin-top: 5rem;
+}
+
+.color-primary{
+  background: #ECF0F1;
 }
 
 .box-left {
@@ -26,6 +47,12 @@ app-home{
 .con-justify {
   text-align: justify;
 }
+
+.margin-indice {
+  margin: 1rem 0 2rem 7rem;
+}
+
+.pointer {cursor: pointer !important;}
 
 .lower-case {
   list-style-type: lower-alpha;
@@ -45,7 +72,20 @@ app-home{
   width: 5rem;
 }
 
-.color-primary{
-  background: #F0F3F4;
+.img-consejo{
+  width: 30rem;
 }
 
+.img-portada{
+  width: 18rem;;
+}
+
+.sub-titule-90{
+  font-size: 80px;
+  transform: rotate(-90deg);
+}
+
+.sub-titule-180{
+  font-size: 80px;
+  transform: rotate(90deg);
+}

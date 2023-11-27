@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HeaderinformeComponent } from './headerinforme/headerinforme.component';
 import { ModalComponent } from './modal/modal.component';
 import { PdfmakeComponent } from './pdfmake/pdfmake.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -13,10 +14,12 @@ import { PdfmakeComponent } from './pdfmake/pdfmake.component';
     PdfmakeComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
   ],
   exports:[
-    HeaderinformeComponent
+    HeaderinformeComponent,
+    ModalComponent
   ]
 })
 export class SharedModule { }

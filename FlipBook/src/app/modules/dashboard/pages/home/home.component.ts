@@ -18,7 +18,7 @@ export class HomeComponent {
   }
 
   getNext(){
-    if (this.tipo>=3){
+    if (this.tipo>=6){
       this.tipo = 0;
     } else {
       this.tipo = this.tipo +1;
