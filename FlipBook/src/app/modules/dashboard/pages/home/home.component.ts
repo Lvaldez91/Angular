@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { homeSize } from 'src/app/shared/variables/layouts.constant';
 
 @Component({
@@ -6,8 +6,16 @@ import { homeSize } from 'src/app/shared/variables/layouts.constant';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit{
   public tipo:number = homeSize.tipo;
+
+constructor(){}
+
+ngOnInit(): void {
+
+}
+
+
 
   getPrev(){
     if (this.tipo==0){

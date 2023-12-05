@@ -1,19 +1,33 @@
 import { Component } from '@angular/core';
 import * as pdfMake from 'pdfmake/build/pdfmake';
 import * as pdfFonts from 'pdfmake/build/vfs_fonts';
+import { Archivo, Articulo } from 'src/app/data/interface/archivo.interface';
+import { ArchivoService } from 'src/app/data/services/archivo.service';
+import { PortadaService } from 'src/app/data/services/portada.service';
+import { searchs } from 'src/app/shared/variables/search-results.constant';
+import { Portada } from '../../data/interface/portada.interface';
 
 (<any>pdfMake).vfs = pdfFonts.pdfMake.vfs;
-//var fs = require('fs');
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
+  private articulo!: Articulo;
+  public archivo!:Archivo[];
+  public searchText: any;
+  public search = searchs.resultados;
+  public actived: boolean = false;
+
   getclick() {
     this.getPFDMake();
   }
 
+  constructor(private archivoSrv:ArchivoService, private service: PortadaService,){
+    this.getDataPortada();
+  }
   // Creación de PDF
   getPFDMake(){
     const buildPDF: any = {
@@ -53,4 +67,25 @@ export class HeaderComponent {
     pdf.open();
   }
 
+  getDataPortada():void {
+    var portada = this.service.getPortadaData('x');
+
+    this.archivo = [
+      {
+        expediente: '090/341',
+        nombre: 'Lucero',
+        appaterno: 'Valdez',
+        apmaterno: 'Domingo',
+        articulo:[portada,portada]
+      }
+    ];
+  }
+
+  getStatus():void{
+    if(this.searchText.length<0 || this.searchText == null){
+      this.actived = false;
+    } else {
+      this.actived = true;
+    }
+  }
 }

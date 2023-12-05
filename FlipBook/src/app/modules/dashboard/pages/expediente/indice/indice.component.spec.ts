@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PortadaComponent } from './portada.component';
+import { IndiceComponent } from './indice.component';
 
-describe('PortadaComponent', () => {
-  let component: PortadaComponent;
-  let fixture: ComponentFixture<PortadaComponent>;
+describe('IndiceComponent', () => {
+  let component: IndiceComponent;
+  let fixture: ComponentFixture<IndiceComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [PortadaComponent]
+      declarations: [IndiceComponent]
     });
-    fixture = TestBed.createComponent(PortadaComponent);
+    fixture = TestBed.createComponent(IndiceComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

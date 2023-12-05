@@ -1,27 +1,90 @@
 <!-- Estrutura general de la vista main  -->
+
 <div class="layout-portada size-book mt-5">
   <div id="book" class="carousel shadow-lg bg-body-tertiary border border-secondary-subtle h-100" [ngClass]="{'size-book_': tipo==0, 'size-page': tipo!=0}">
     <div class="carousel-inner h-100 overflow-y-auto color-primary">
       <div class="carousel-item active h-100 left">
-        <app-informe-0></app-informe-0>
-      </div>
-      <div class="carousel-item h-100 left"  >
-        <app-informe-1></app-informe-1>
-      </div>
-      <div class="carousel-item h-100 right">
-        <app-informe-2></app-informe-2>
+        <app-portadainicial></app-portadainicial>
       </div>
       <div class="carousel-item h-100 left">
-        <app-informe-3></app-informe-3>
-      </div>
-      <div class="carousel-item h-100 left"  >
-        <app-informe-1></app-informe-1>
+        <div class="container-fluid  h-100">
+          <div class="row h-100">
+            <!-- Sheet 1 -->
+            <div class="col box-left">
+              <app-indice></app-indice>
+            </div>
+            <!-- Sheet 2 -->
+            <div class="col box-right">
+              <app-portadacjf></app-portadacjf>
+            </div>
+            <!-- End Sheet 2 -->
+          </div>
+        </div>
       </div>
       <div class="carousel-item h-100 right">
-        <app-informe-2></app-informe-2>
+        <div class="row h-100">
+          <!-- Sheet 1 -->
+          <div class="col box-left">
+            <app-indice></app-indice>
+          </div>
+          <!-- Sheet 2 -->
+          <div class="col box-right">
+            <app-portadacjf></app-portadacjf>
+          </div>
+          <!-- End Sheet 2 -->
+        </div>
       </div>
       <div class="carousel-item h-100 left">
-        <app-informe-3></app-informe-3>
+        <div class="row h-100">
+          <!-- Sheet 1 -->
+          <div class="col box-left">
+            <app-indice></app-indice>
+          </div>
+          <!-- Sheet 2 -->
+          <div class="col box-right">
+            <app-portadacjf></app-portadacjf>
+          </div>
+          <!-- End Sheet 2 -->
+        </div>
+      </div>
+      <div class="carousel-item h-100 left"  >
+        <div class="row h-100">
+          <!-- Sheet 1 -->
+          <div class="col box-left">
+            <app-indice></app-indice>
+          </div>
+          <!-- Sheet 2 -->
+          <div class="col box-right">
+            <app-portadacjf></app-portadacjf>
+          </div>
+          <!-- End Sheet 2 -->
+        </div>
+      </div>
+      <div class="carousel-item h-100 right">
+        <div class="row h-100">
+          <!-- Sheet 1 -->
+          <div class="col box-left">
+            <app-indice></app-indice>
+          </div>
+          <!-- Sheet 2 -->
+          <div class="col box-right">
+            <app-portadacjf></app-portadacjf>
+          </div>
+          <!-- End Sheet 2 -->
+        </div>
+      </div>
+      <div class="carousel-item h-100 left">
+        <div class="row h-100">
+          <!-- Sheet 1 -->
+          <div class="col box-left">
+            <app-indice></app-indice>
+          </div>
+          <!-- Sheet 2 -->
+          <div class="col box-right">
+            <app-portadacjf></app-portadacjf>
+          </div>
+          <!-- End Sheet 2 -->
+        </div>
       </div>
     </div>
     <button class="carousel-control-prev page leftbtn"  *ngIf="tipo!=0" type="button" data-bs-target="#book" data-bs-slide="prev" (click)="getPrev()">
@@ -34,3 +97,18 @@
     </button>
   </div>
 </div>
+
+
+<!-- <div class="layout-portada size-book mt-5">
+  <div class="row size-page">
+    <div class="col-1 text-center">
+      <button class="btn btn-light h-100"><i class="bi bi-caret-left-fill"></i></button>
+    </div>
+    <div class="col ">
+      <app-portada-0></app-portada-0>
+    </div>
+    <div class="col-1">
+      <button class="btn btn-light h-100"><i class="bi bi-caret-right-fill"></i></button>
+    </div>
+  </div>
+</div> -->

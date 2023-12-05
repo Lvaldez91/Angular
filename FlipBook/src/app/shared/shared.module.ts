@@ -4,6 +4,7 @@ import { HeaderinformeComponent } from './headerinforme/headerinforme.component'
 import { ModalComponent } from './modal/modal.component';
 import { PdfmakeComponent } from './pdfmake/pdfmake.component';
 import { FormsModule } from '@angular/forms';
+import { SearchResultsComponent } from './search-results/search-results.component';
 
 
 
@@ -11,7 +12,8 @@ import { FormsModule } from '@angular/forms';
   declarations: [
     HeaderinformeComponent,
     ModalComponent,
-    PdfmakeComponent
+    PdfmakeComponent,
+    SearchResultsComponent
   ],
   imports: [
     CommonModule,
