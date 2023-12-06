@@ -9,7 +9,7 @@ import { MenuItem } from 'src/app/data/interface/menuItems.interface';
 export class IndiceComponent implements OnInit{
 
   constructor(){
-
+    
   }
 
   ngOnInit(): void {

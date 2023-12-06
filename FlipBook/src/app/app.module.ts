@@ -12,6 +12,7 @@ import localEs from '@angular/common/locales/es'
 import { registerLocaleData } from '@angular/common';
 import { FilterPipe } from './shared/pipes/filter.pipe';
 import { SearchComponent } from './layout/search/search.component';
+import { NavComponent } from './layout/nav/nav.component';
 registerLocaleData(localEs,'es')
 
 @NgModule({
@@ -20,7 +21,8 @@ registerLocaleData(localEs,'es')
     HeaderComponent,
     MainComponent,
     FilterPipe,
-    SearchComponent
+    SearchComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,

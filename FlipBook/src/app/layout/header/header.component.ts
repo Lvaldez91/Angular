@@ -6,6 +6,7 @@ import { ArchivoService } from 'src/app/data/services/archivo.service';
 import { PortadaService } from 'src/app/data/services/portada.service';
 import { searchs } from 'src/app/shared/variables/search-results.constant';
 import { Portada } from '../../data/interface/portada.interface';
+import { DiligenciaLlamadaService } from 'src/app/data/services/diligenciaLlamada.service';
 
 (<any>pdfMake).vfs = pdfFonts.pdfMake.vfs;
 
@@ -25,7 +26,7 @@ export class HeaderComponent {
     this.getPFDMake();
   }
 
-  constructor(private archivoSrv:ArchivoService, private service: PortadaService,){
+  constructor(private archivoSrv:ArchivoService, private service: PortadaService,private diligencia: DiligenciaLlamadaService){
     this.getDataPortada();
   }
   // Creación de PDF
@@ -69,6 +70,7 @@ export class HeaderComponent {
 
   getDataPortada():void {
     var portada = this.service.getPortadaData('x');
+    var formulario = this.diligencia.getDataDiligenciaLlamada();
 
     this.archivo = [
       {
@@ -76,7 +78,7 @@ export class HeaderComponent {
         nombre: 'Lucero',
         appaterno: 'Valdez',
         apmaterno: 'Domingo',
-        articulo:[portada,portada]
+        articulo:[portada]
       }
     ];
   }

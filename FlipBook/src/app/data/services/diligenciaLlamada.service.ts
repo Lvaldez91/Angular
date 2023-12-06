@@ -15,6 +15,14 @@ export class DiligenciaLlamadaService {
   getDataDiligenciaLlamada(): Articulo {
     try {
       // contenido del servicio
+      this.diligencia.expCuadernillo = '350/100'
+      this.diligencia.nombreDenunciante= 'Lucero';
+        this.diligencia.appDenunciante = 'Valdez';
+        this.diligencia.apmDenunciante ='Domingo';
+        this.diligencia.horaFin = '09:30 a.m.';
+        this.diligencia.personaRedacto = 'Fernanda Gonzalez';
+        this.diligencia.cargoRedacto='Jefe de Departamento';
+        this.diligencia.fecha = '2023/10/04';
 
       var iniciales = this.getFirstCharacter(
         this.diligencia.nombreDenunciante,
@@ -23,9 +31,8 @@ export class DiligenciaLlamadaService {
       );
 
       this.articulo = {
-        id: 3,
         titulo: 'Diligencia de Llamada',
-        ruta: '',
+        ruta: 'Diligencia',
         contenido: [
           { tag: 't1', texto: `DILIGENCIA DE LLAMADA` },
           {
