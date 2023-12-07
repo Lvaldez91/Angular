@@ -20,17 +20,8 @@
           </section>
           <section class="mt-3 fs-4">
             <ol start="1">
-              <li>
-                <a class="pointer link-dark link-underline link-underline-opacity-0">Indice</a>
-              </li>
-              <li>
-                <a class="pointer link-dark link-underline link-underline-opacity-0 ">Portada</a>
-              </li>
-              <li>
-                <a class="pointer link-dark link-underline link-underline-opacity-0 ">Informe del Caso</a>
-              </li>
-              <li>
-                <a class="pointer link-dark link-underline link-underline-opacity-0 ">Informe del Caso</a>
+              <li *ngFor="let item of rutas; let i=index">
+                <a class="pointer link-dark link-underline link-underline-opacity-0">{{item.title |titlecase}}</a>
               </li>
             </ol>
           </section>

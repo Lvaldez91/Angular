@@ -4,7 +4,7 @@ import * as pdfFonts from 'pdfmake/build/vfs_fonts';
 import { Archivo, Articulo } from 'src/app/data/interface/archivo.interface';
 import { ArchivoService } from 'src/app/data/services/archivo.service';
 import { PortadaService } from 'src/app/data/services/portada.service';
-import { searchs } from 'src/app/shared/variables/search-results.constant';
+import { searchs } from 'src/app/shared/variables/variables.constant';
 import { Portada } from '../../data/interface/portada.interface';
 import { DiligenciaLlamadaService } from 'src/app/data/services/diligenciaLlamada.service';
 
@@ -84,6 +84,7 @@ export class HeaderComponent {
   }
 
   getStatus():void{
+    console.log(this.searchText);
     if(this.searchText.length<0 || this.searchText == null){
       this.actived = false;
     } else {

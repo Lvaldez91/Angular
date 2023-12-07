@@ -55,7 +55,7 @@ export class DiligenciaLlamadaService {
         ],
       };
     } catch {}
-    console.log(this.articulo);
+    //console.log(this.articulo);
     return this.articulo;
   }
 

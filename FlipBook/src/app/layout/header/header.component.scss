@@ -1,13 +1,17 @@
 .menu{
-  background:#F4F6F7;
+  background:#653279;
+  color:white;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   width: 300px;
 }
 
-.item{
+.items {
   background:#F4F6F7;
+  border: 1px #4A235A;
 }
 
-.item:hover {
-  background:#C39BD3 ;
+.items:hover{
+  background:#4A235A;
+  color: white;
 }
+

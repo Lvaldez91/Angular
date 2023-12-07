@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { searchs } from '../variables/search-results.constant';
+import { searchs } from '../variables/variables.constant';
 import { __values } from 'tslib';
 import { contenidoArticulo } from '../../data/interface/archivo.interface';
 
@@ -35,10 +35,6 @@ export class FilterPipe implements PipeTransform {
         this.bandera = String(item[key]).toLowerCase().includes(arg.toLowerCase());
         ruta = item['ruta'];
         titulo = item['titulo'];
-        // if (this.bandera){
-        //   _key = key;
-        //   arr.push({_key:item[key], tag:key, ruta:ruta, titulo:titulo});
-        // }
           item['contenido'].filter((items:{[x: string]: any;}) =>{
             ruta = item['ruta'];
             titulo = item['titulo'];
@@ -55,9 +51,7 @@ export class FilterPipe implements PipeTransform {
 
     let busqueda = arr.filter((valorActual, indiceActual, arreglo) => {
       return arreglo.findIndex(valorDelArreglo => JSON.stringify(valorDelArreglo) === JSON.stringify(valorActual)) === indiceActual
-  });
-
-    console.log(busqueda);
+    });
     return busqueda;
   }
 }

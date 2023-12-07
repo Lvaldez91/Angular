@@ -10,11 +10,14 @@ const routes: Routes = [
     path:'',
     component: MainComponent,
     children: [
-      {path:'Expediente', component:HomeComponent},
-      {path:'indice', component:IndiceComponent},
-      {path:'portadacjf', component:PortadacjfComponent},
-      {path:'cuadernillo', component:PortadacjfComponent},
-      {path:'**', redirectTo:'Expediente'},
+      {path:'expediente', component:HomeComponent, title:'Expediente'},
+      {path:'indice', component:IndiceComponent, title:'Indice'},
+      {path:'portadaCjf', component:PortadacjfComponent, title:'Portada de CJF'},
+      {path:'cuadernillo', component:PortadacjfComponent, title:'Cuadernillo de Orientación'},
+      {path:'diligencia', component:PortadacjfComponent, title:'Diligencia de Llamada'},
+      {path:'formulario', component:PortadacjfComponent, title:'Formulario de Atención'},
+      {path:'informe', component:PortadacjfComponent, title:'Informe de Sesión'},
+      {path:'**', redirectTo:'expediente'},
     ]
   }
 ];
