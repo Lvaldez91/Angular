@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "11-FlipBook": {
+    "webLegal": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -72,10 +72,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "11-FlipBook:build:production"
+              "browserTarget": "webLegal:build:production"
             },
             "development": {
-              "browserTarget": "11-FlipBook:build:development"
+              "browserTarget": "webLegal:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +83,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "11-FlipBook:build"
+            "browserTarget": "webLegal:build"
           }
         },
         "test": {

@@ -1,4 +1,4 @@
-<!-- Estrutura general de la vista main  -->
+<!-- HOME: SE UTILIZA PRINCIPALMENTE COMO UN LAYOUT DONDE SE MOSTRARAN TODAS LAS RUTAS [ROUTER-OUT]  -->
 
 <div class="layout-portada size-book mt-5">
   <div id="book" class="carousel shadow-lg bg-body-tertiary border border-secondary-subtle h-100" [ngClass]="{'size-book_': tipo==0, 'size-page': tipo!=0}">
@@ -25,11 +25,11 @@
         <div class="row h-100">
           <!-- Sheet 1 -->
           <div class="col box-left">
-            <app-indice></app-indice>
+            <app-cuadernillo></app-cuadernillo>
           </div>
           <!-- Sheet 2 -->
           <div class="col box-right">
-            <app-portadacjf></app-portadacjf>
+            <app-cuadernillo-orientacion></app-cuadernillo-orientacion>
           </div>
           <!-- End Sheet 2 -->
         </div>
@@ -38,11 +38,11 @@
         <div class="row h-100">
           <!-- Sheet 1 -->
           <div class="col box-left">
-            <app-indice></app-indice>
+            <app-acompanamiento-psico></app-acompanamiento-psico>
           </div>
           <!-- Sheet 2 -->
           <div class="col box-right">
-            <app-portadacjf></app-portadacjf>
+            <app-cuadernillo></app-cuadernillo>
           </div>
           <!-- End Sheet 2 -->
         </div>
@@ -51,11 +51,11 @@
         <div class="row h-100">
           <!-- Sheet 1 -->
           <div class="col box-left">
-            <app-indice></app-indice>
+            <app-diligencia-llamada></app-diligencia-llamada>
           </div>
           <!-- Sheet 2 -->
           <div class="col box-right">
-            <app-portadacjf></app-portadacjf>
+            <app-formulario-atencion></app-formulario-atencion>
           </div>
           <!-- End Sheet 2 -->
         </div>
@@ -64,24 +64,24 @@
         <div class="row h-100">
           <!-- Sheet 1 -->
           <div class="col box-left">
-            <app-indice></app-indice>
+            <app-info-sesion></app-info-sesion>
           </div>
           <!-- Sheet 2 -->
           <div class="col box-right">
-            <app-portadacjf></app-portadacjf>
+            <app-llamada-orientacion></app-llamada-orientacion>
           </div>
           <!-- End Sheet 2 -->
         </div>
       </div>
-      <div class="carousel-item h-100 left">
+      <div class="carousel-item h-100 right">
         <div class="row h-100">
           <!-- Sheet 1 -->
           <div class="col box-left">
-            <app-indice></app-indice>
+            <app-aviso-privacidad></app-aviso-privacidad>
           </div>
           <!-- Sheet 2 -->
           <div class="col box-right">
-            <app-portadacjf></app-portadacjf>
+            <!-- <app-llamada-orientacion></app-llamada-orientacion> -->
           </div>
           <!-- End Sheet 2 -->
         </div>
@@ -97,15 +97,13 @@
     </button>
   </div>
 </div>
-
-
 <!-- <div class="layout-portada size-book mt-5">
   <div class="row size-page">
     <div class="col-1 text-center">
       <button class="btn btn-light h-100"><i class="bi bi-caret-left-fill"></i></button>
     </div>
-    <div class="col ">
-      <app-portada-0></app-portada-0>
+    <div class="col">
+      <app-portadainicial></app-portadainicial>
     </div>
     <div class="col-1">
       <button class="btn btn-light h-100"><i class="bi bi-caret-right-fill"></i></button>

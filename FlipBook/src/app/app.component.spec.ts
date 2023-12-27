@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title '11-FlipBook'`, () => {
+  it(`should have as title 'webLegal'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('11-FlipBook');
+    expect(app.title).toEqual('webLegal');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('11-FlipBook app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('webLegal app is running!');
   });
 });

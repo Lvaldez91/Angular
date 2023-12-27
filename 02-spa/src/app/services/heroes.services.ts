@@ -19,7 +19,7 @@ export class HeroeServices{
           aparicion: '1939-05-01',
           casa: 'DC'
         },
-        {
+        { 
           nombre: 'Daredevil',
           bio: 'Al haber perdido la vista, los cuatro sentidos restantes de Daredevil fueron aumentados por la radiación a niveles superhumanos, en el accidente que tuvo cuando era niño. A pesar de su ceguera, puede \'ver\' a través de un \'sexto sentido\' que le sirve como un radar similar al de los murciélagos.',
           img: 'assets/img/daredevil.png',

@@ -11,7 +11,6 @@ import { DashboardModule } from './modules/dashboard/dashboard.module';
 import localEs from '@angular/common/locales/es'
 import { registerLocaleData } from '@angular/common';
 import { FilterPipe } from './shared/pipes/filter.pipe';
-import { SearchComponent } from './layout/search/search.component';
 import { NavComponent } from './layout/nav/nav.component';
 registerLocaleData(localEs,'es')
 
@@ -21,7 +20,6 @@ registerLocaleData(localEs,'es')
     HeaderComponent,
     MainComponent,
     FilterPipe,
-    SearchComponent,
     NavComponent
   ],
   imports: [

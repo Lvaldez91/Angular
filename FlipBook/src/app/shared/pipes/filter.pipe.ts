@@ -1,13 +1,12 @@
-import { Pipe, PipeTransform } from '@angular/core';
+import { EventEmitter, Output, Pipe, PipeTransform } from '@angular/core';
 import { searchs } from '../variables/variables.constant';
-import { __values } from 'tslib';
-import { contenidoArticulo } from '../../data/interface/archivo.interface';
 
 @Pipe({
   name: 'filter',
   pure: false,
 })
 export class FilterPipe implements PipeTransform {
+  //public bolEBandera = searchs.resultados;
   public search: any = [];
   bandera: boolean = false;
 
@@ -49,9 +48,15 @@ export class FilterPipe implements PipeTransform {
       });
     });
 
-    let busqueda = arr.filter((valorActual, indiceActual, arreglo) => {
-      return arreglo.findIndex(valorDelArreglo => JSON.stringify(valorDelArreglo) === JSON.stringify(valorActual)) === indiceActual
+    let busqueda = arr.filter((values, index, arreglo) => {
+      return arreglo.findIndex(arr => JSON.stringify(arr) === JSON.stringify(values)) === index
     });
+
+    if (busqueda.length >= 0){
+      searchs.resultado =  true;
+    } else {
+      searchs.resultado =  false;
+    }
     return busqueda;
   }
 }

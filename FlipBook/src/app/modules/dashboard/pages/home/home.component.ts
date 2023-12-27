@@ -12,11 +12,11 @@ export class HomeComponent implements OnInit{
 constructor(){}
 
 ngOnInit(): void {
-
 }
 
 
 
+// Indica el tipo de layout en cuando al tamaño
   getPrev(){
     if (this.tipo==0){
       this.tipo = 3;

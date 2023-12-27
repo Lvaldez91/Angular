@@ -1,11 +1,16 @@
 $family-text: Arial, Helvetica, Verdana;
 $bk-purple:#653279;
 
+:root{
+  min-width: 989px;
+  min-height: 723px;
+}
+
 body {
   background: #FFFFFF;
-  margin: 0 !important;
   color: #212f3c;
-  font-family:$family-text !important;
+  font-family: $family-text !important;
+  margin: 0 !important;
   overflow: hidden;
   padding: 0 !important;
 }
@@ -13,6 +18,10 @@ body {
 app-home{
   margin-top: 20px;
   overflow-y: auto;
+}
+
+h1{
+  font-size: medium;
 }
 
 .margin-0{
@@ -81,6 +90,7 @@ app-home{
   width: 18rem;;
 }
 
+// Rotación de titulo
 .sub-titule-90{
   font-size: 80px;
   transform: rotate(-90deg);

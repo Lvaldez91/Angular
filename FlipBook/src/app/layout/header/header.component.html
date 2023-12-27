@@ -17,13 +17,14 @@
   </div>
 </div>
 
+<!-- Mení: Indice -->
 <div class="offcanvas offcanvas-start menu opacity-75" tabindex="-1" id="menubooks" aria-labelledby="menubook">
   <div class="offcanvas-header border-bottom border-4">
     <h5 class="offcanvas-title ms-2 text-uppercase fw-medium" id="menubook"><i
         class="bi bi-menu-button-wide-fill me-5"></i>Menú</h5>
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
-  <div class="offcanvas-body  w-100">
+  <div class="offcanvas-body w-100">
     <div class="row">
       <div class="col m-0 p-0 pointer">
         <div class="list-group text-start  fw-medium">
@@ -45,16 +46,16 @@
       <div class="col m-1 p-0">
         <div class="input-group">
           <input type="text" class="form-control float-end" name="searchText" [(ngModel)]="searchText"
-            placeholder="Buscar..." (KeyUp)="getStatus()">
+            placeholder="Buscar..." >
           <span class="input-group-text" id="basic-addon2"><i class="bi bi-search"></i></span>
         </div>
       </div>
     </div>
-    <div class="row mt-2">
-      <div class="col pointer m-1 p-0">
+    <div class="row mt-2" >
+      <div class="col pointer m-1 p-0" >
         <div class="card border-success items mt-2" style="max-width: 18rem;"
-          *ngFor="let item of archivo | filter: searchText ">
-          <div class="card-header fw-bold">Ruta: <a href="">{{item.ruta}}</a> </div>
+        *ngFor="let item of archivo | filter: searchText" >
+          <div class="card-header fw-bold text-start">Ruta: <a href="">{{item.ruta}}</a> </div>
           <div class="card-body">
             <p class="card-text fs-6 text-start"><strong>Texto Encontrado: </strong>{{item._key}}</p>
           </div>

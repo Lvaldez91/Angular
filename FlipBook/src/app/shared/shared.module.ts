@@ -17,7 +17,7 @@ import { SearchResultsComponent } from './search-results/search-results.componen
   ],
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
   ],
   exports:[
     HeaderinformeComponent,
