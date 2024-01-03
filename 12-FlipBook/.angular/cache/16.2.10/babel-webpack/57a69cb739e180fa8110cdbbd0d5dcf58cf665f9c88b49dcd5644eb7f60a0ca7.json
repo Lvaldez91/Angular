@@ -1,0 +1,1 @@
+{"ast":null,"code":"export var typeLayout = 0;","map":{"version":3,"names":["typeLayout"],"sources":["D:\\ProjectsGit\\Angular\\12-FlipBook\\src\\app\\shared\\constants\\layout-variable.ts"],"sourcesContent":["export var typeLayout = 0;\r\n"],"mappings":"AAAA,OAAO,IAAIA,UAAU,GAAG,CAAC"},"metadata":{},"sourceType":"module","externalDependencies":[]}
